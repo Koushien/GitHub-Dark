@@ -749,7 +749,7 @@
   .timeline-new-comment .discussion-topic-header, .branch-action-body,
   .inline-comment-form, .file-history-tease .participation,
   .gist-quicksearch-result-header, .label-generic, .migrate-org-roles {
-    background: #181818 !important;
+    background: #252525 !important;
   }
   .markdown-body table tr, .blob-num-context {
     background: #141414 !important;
