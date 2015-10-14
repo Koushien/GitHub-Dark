@@ -167,7 +167,7 @@
     -moz-appearance: none !important;
     background: #181818 !important;
     border: 1px solid #343434 !important;
-    color: #eee !important;
+    color: #f6f6f6 !important;
   }
   /* custom checkbox and radio styles. We need a full set of styles here as
      WebKit removes all of them when -webkit-appearance: none is set. */
@@ -1417,7 +1417,7 @@
   .pagehead-tabs-item:hover, a.pagehead-tabs-item:hover, .article-meta,
   a.article-meta, .timeline-comment-header-text code a, .commit-tease-sha,
   a.commit-tease-sha {
-    color: #c0c0c0 !important;
+    color: #e6e6e6 !important;
   }
   h5, h6, .edit-repository-meta, .field label, .boxed-group-list li, .capped-box,
   .marketing-nav a, .header .header-logo-invertocat span,
@@ -1470,7 +1470,7 @@
   .tabnav .tabnav-extras, .label-admin, .program-info-column p,
   .form-checkbox .note, .file-history-tease, .blob-num:hover, .select-menu-modal,
   .gist-snippet-meta .gist-count-links > li > a, .commit-tease .message {
-    color: #a0a0a0 !important;
+    color: #e0e0e0 !important;
   }
   /* content text */
   #contributions-calendar .contrib-details div, .mini-icon-remove-close:hover,
@@ -1509,7 +1509,7 @@
   .type-icon-state-none, a.type-icon-state-none, .pagehead-tabs-item,
   a.pagehead-tabs-item, .org-settings-team-count, a.muted-link strong,
   table.files td.icon, .commit-tease {
-    color: #808080 !important;
+    color: #b3b3b3 !important;
   }
   .vcard-detail .octicon, .member-badge .octicon,
   .command-bar .octicon-question:before, .auto-search-group .octicon:before,
