@@ -1,5 +1,5 @@
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\.)?github\.com((?!generated_pages\/preview).)*$"), domain("render.githubusercontent.com"), domain("raw.githubusercontent.com") {
- /*! Github Dark Theme v1.14.20 (10/14/2015) *//*
+ /*! Github Dark Theme v1.14.22 (10/19/2015) *//*
  * https://github.com/StylishThemes/GitHub-Dark
  * http://userstyles.org/styles/37035
  * License: https://creativecommons.org/licenses/by-sa/4.0/
@@ -1098,7 +1098,7 @@
   .codesearch-results .repo-list-description em, .blog-search-results em,
   .codesearch-cols em, ul.bignav li a:hover, ul.smallnav li a:hover,
   .comments-wrapper, .rackspace, .subnav-bar > ul > li > ul > li > a:hover,
-  ol.download-list li:nth-child(2n), .issue.active, .counter, .orgs-nav .count,
+  .issue.active, .counter, .orgs-nav .count,
   .filter-item:not(.selected):hover, .task-progress .progress-bar .progress,
   .oauth-connection-illustration .oauth-image {
     background: #444 !important;
@@ -1306,8 +1306,7 @@
   .branch-action-state-dirty .branch-action-icon:before,
   .branch-action-state-closed-dirty.branch-action-icon:before,
   .branch-action-state-merged .branch-action-icon:before,
-  .full-commit .authorship a,
-  #fork-select .target:hover:not(.disabled),
+  .full-commit .authorship a, #fork-select .target:hover:not(.disabled),
   .full-commit .authorship .author-name, .showcase-featured .featured-grid-link,
   .collection-card-title, .collection-card-image:hover,
   .explore-page .see-more-link, .mute, .pull-request-link:hover,
@@ -1353,7 +1352,8 @@
   .select-menu-item.navigation-focus .description-inline,
   .gist-snippet-meta .description, a.select-menu-item-text,
   .select-menu-item-text strong, .clone-url-button > .clone-url-link,
-  a.user-mention, .user-mention, a.team-mention, .team-mention {
+  a.user-mention, .user-mention, a.team-mention, .team-mention,
+  .github-jobs-promotion strong {
     color: #e0e0e0 !important;
   }
   b, strong, .explain strong {
@@ -2125,26 +2125,30 @@
     color: #ddd !important;
   }
   .zh-issue-placeholder, .zh-issueviewer-content, .zh-board-menu-item button,
-  .zh-board-menu-item button {
+  .zh-board-menu-item button, .zh-todo-item-not-sortable,
+  .zh-todo-item-placeholder, .zh-todolist-menu-item-placeholder {
     background-color: #111 !important;
     border-color: #484848 !important;
   }
   li.zh-pipeline, li.new-pipeline-column, .zh-schema-pipelines,
-  .zh-pipeline-issue-heading, .zh-connect-repository-container, .burndown-chart {
-    background-color: #181818 !important;
+  .zh-pipeline-issue-heading, .zh-connect-repository-container, .burndown-chart,
+  .zh-todolist-box {
+    background: #181818 !important;
     border-color: #484848 !important;
   }
   li.zh-pipeline-issue, .zh-pipeline-issue-content, .zh-issue-meta,
   .zh-pipeline-issue-action, .zh-pipeline-heading-container, .zh-button-grey,
   .zh-schema-title, .zh-milestone-dates,
   .zh-burndown-chart .milestone-start-calendar-container,
-  .zh-toggle-button.selected, .popover li {
+  .zh-toggle-button.selected, .popover li, .zh-todo-item {
     background: #222 !important;
     border-color: #484848 !important;
   }
   .zh-uploader-drop, .zh-button-grey.selected, .zh-button-grey:hover,
   .is-not-pawed:not(.zh-paw-count-0), .zh-board-menu-item button:hover,
-  .zh-toggle-button.selected:hover, .popover li:hover {
+  .zh-toggle-button.selected:hover, .popover li:hover,
+  .zh-todolist-today-separator, .zh-todolist-completed-separator,
+  .zh-todolist-menu.ui-sortable-helper {
     background: #333 !important;
   }
   .zh-chart .yaxis-strips .hstripe:nth-child(2n) {
@@ -2154,19 +2158,20 @@
   .zh-paw-btn-inner, .zh-schema, .zh-schema-pipeline-name, .popover,
   .zh-uploader-drop, .zh-milestone-dates, .zh-burndown-chart-container,
   .zh-burndown-chart .stats-container, .popover li,
-  .zh-pipeline-collapsed .zh-pipeline-options {
+  .zh-pipeline-collapsed .zh-pipeline-options,
+  .zh-todolist-menu.ui-sortable-helper {
     border-color: #484848 !important;
   }
   .popover.right .arrow {
     border-right-color: #484848 !important;
   }
   .file-commit-form .commit-form:before, .file-commit-form .commit-form:after,
-  .zh-burndown .stats-item {
+  .zh-burndown .stats-item, .zh-todopage-menu {
     border-right-color: #343434 !important;
   }
   /* text */
   .zh-uploader-container *, .zh-overlay-body, .zh-pipeline-issue-action,
-  .zh-board-menu-item button.selected .octicon {
+  .zh-board-menu-item button.selected .octicon, .zh-todolist-create:hover {
     color: #fff !important;
   }
   .popover li, .zh-pipeline-options li:hover {
@@ -2202,7 +2207,7 @@
     vertical-align: middle !important;
   }
   /* vote */
-  .is-not-pawed .zh-paw-btn-inner {
+  .is-not-pawed .zh-paw-btn-inner, .zh-split-button-icon {
     background: transparent !important;
     border: #484848 1px solid !important;
   }
@@ -2212,7 +2217,7 @@
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  .zh-paw-btn-count {
+  .zh-paw-btn-count, .zh-todo-link span  {
     color: #ddd !important;
   }
   /* invert image */
@@ -2220,7 +2225,8 @@
     -webkit-filter: invert(40%) !important;
             filter: invert(40%) !important;
   }
-  .zh-icon-burndown, .zh-icon-column-collapse, .zh-icon-column-expand {
+  .zh-icon-burndown, .zh-icon-column-collapse, .zh-icon-column-expand,
+  .zh-todo-navbar-icon, .zh-todo-icon-today-dark-grey {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
   }
