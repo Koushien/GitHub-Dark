@@ -713,7 +713,7 @@
   .discussion-item-merged.open .discussion-item-details, .word-upload-callout,
   .commit-tease-contributors {
     background: #181818 !important;
-    border-color: #343434 !important;
+    border-color: #626262 !important;
   }
   #readme .plain, .readme .markdown-body, .readme .plain, .pull-request-composer,
   .drag-and-drop, .octofication .broadcast-icon-mask, .file .image,
