@@ -1543,7 +1543,7 @@
   .thread-subscription-status .reason, .toc-diff-stats .octicon, .blob-num,
   .recent-gists .description .blank, .recent-gists .metadata,
   .member-meta .access-link {
-    color: #666 !important;
+    color: #9a9a9a !important;
   }
   .branch-infobar .lightweight-actions > li .octicon, .pagehead-tabs-item .octicon {
     color: #4b4b4b !important;
